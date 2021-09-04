@@ -1,0 +1,9 @@
+<ul *ngIf="isVisible">
+  <li *ngFor="let item of friendslist">
+    {{ item.name }} is {{ item.age }} years old
+  </li>
+</ul>
+
+<button (click)="hideList()">
+  Click to Hide List
+</button>
